@@ -1,0 +1,13 @@
+{
+    "E_MI_MODULE_ID_SYS" :
+    {
+        "cmdQBufSize" : 300,
+        "bEnableCmdqReset" : true,
+        "g_bEnableMiuPanic" : false,
+        "g_bEnableMiuProtect" : true
+    },
+    "E_MI_MODULE_ID_FB" :
+    {
+        "default_reserved_mem_name": "fb"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "E_MI_MODULE_ID_SYS" :
+    {
+        "cmdQBufSize" : 300,
+        "bEnableCmdqReset" : true,
+        "g_bEnableMiuPanic" : false,
+        "g_bEnableMiuProtect" : true
+    },
+    "E_MI_MODULE_ID_SNR" :
+    {
+        "u8MulSnrRtPwmCnt" : 1,
+        "u8MulSnrRtPwmId" : [ 0 ],
+        "u8MulSnrRtPwmActivePolarity" : [0],
+        "u32MulSnrRtPwmDefFps" : 15000
+    },
+    "E_MI_MODULE_ID_VIF" :
+    {
+        "u8MulSnrRtVifGroupCnt" : 2,
+        "u8MulSnrRtVifGroupPhyMap" : [ 0, 1],
+        "VifGroupSensorSelect" : [
+            {
+                "na" : [ ]
+            }
+        ]
+    },
+    "E_MI_MODULE_ID_FB" :
+    {
+        "default_reserved_mem_name": "fb"
+    }
+}

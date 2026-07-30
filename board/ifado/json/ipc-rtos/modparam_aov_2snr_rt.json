@@ -1,0 +1,63 @@
+{
+    "E_MI_MODULE_ID_SYS" :
+    {
+        "cmdQBufSize" : 300,
+        "bEnableCmdqReset" : true,
+        "g_bEnableMiuPanic" : false,
+        "g_bEnableMiuProtect" : true
+    },
+    "E_MI_MODULE_ID_SNR" :
+    {
+        "u8MulSnrRtPwmCnt" : 1,
+        "u8MulSnrRtPwmId" : [ 3 ],
+        "u8MulSnrRtPwmActivePolarity" : [0],
+        "u32MulSnrRtPwmDefFps" : 15000
+    },
+    "E_MI_MODULE_ID_VIF" :
+    {
+        "u8MulSnrRtVifGroupCnt" : 2,
+        "u8MulSnrRtVifGroupPhyMap" : [ 0, 1],
+        "VifGroupSensorSelect" : [
+            {
+                "na" : [ ]
+            }
+        ]
+    },
+    "E_MI_MODULE_ID_DISP" :
+    {
+        "threadPriority" : 98,
+        "debugFilePath" : "",
+        "u64CpuMaskAffinity" : "0x0"
+    },
+    "E_MI_MODULE_ID_ISP" :
+    {
+        "u32DefaultDropNum": 0,
+        "rootPath" : "/config/iqfile",
+        "isp_clk": 120000000
+    },
+    "E_MI_MODULE_ID_MIPITX" :
+    {
+        "threadPriority" : 70
+    },
+    "E_MI_MODULE_ID_PANEL" :
+    {
+        "debugFilePath" : ""
+    },
+    "E_MI_MODULE_ID_FB" :
+    {
+        "default_reserved_mem_name": "fb"
+    },
+    "E_MI_MODULE_ID_SCL" :
+    {
+        "u32FClk1RateHz": 121500000
+    },
+    "E_MI_MODULE_ID_VENC" :
+    {
+        "ven_clock": 120000000,
+        "ven_clock_2nd": 216000000
+    },
+    "E_MI_MODULE_ID_IPU" :
+    {
+        "ipu_clk": 400000000
+    }
+}

@@ -1,0 +1,13 @@
+#!/bin/sh
+
+mkdir -p /dev/shm
+mkdir -p /dev/pts
+mount -a
+
+echo /sbin/mdev > /proc/sys/kernel/hotplug
+
+/sbin/mdev -s
+
+/sbin/sysctl -p
+
+mkdir -p /var/lock

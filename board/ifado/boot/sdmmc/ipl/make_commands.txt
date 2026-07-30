@@ -1,0 +1,6 @@
+IPL.ifado_sdmmc.bin                                                                              ./build.py -c ./configs/ifado.json -t linux -g sdmmc -b 0
+IPL_CUST.ifado_sdmmc.bin                                                                         ./build.py -c ./configs/ifado.json -t linux -g sdmmc -b 0
+IPL.ifado_sdmmc.FPGA=y.bin                                                                       ./build.py -c ./configs/ifado.json -t linux -g sdmmc -b 1
+IPL_CUST.ifado_sdmmc.FPGA=y.bin                                                                  ./build.py -c ./configs/ifado.json -t linux -g sdmmc -b 1
+IPL.ifado_sdmmc.REGION_WW=y.bin                                                                  ./build.py -c ./configs/ifado.json -t linux -g sdmmc -b 2
+IPL_CUST.ifado_sdmmc.REGION_WW=y.bin                                                             ./build.py -c ./configs/ifado.json -t linux -g sdmmc -b 2

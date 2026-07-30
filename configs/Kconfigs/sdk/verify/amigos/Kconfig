@@ -1,0 +1,10 @@
+config VERIFY_AMIGOS
+    bool "amigos"
+    default n
+    help
+        whether to compile or not
+
+config verify_amigos
+    string
+    default enable if VERIFY_AMIGOS
+    default disable if !VERIFY_AMIGOS

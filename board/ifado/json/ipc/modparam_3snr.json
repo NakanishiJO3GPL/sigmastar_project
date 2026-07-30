@@ -1,0 +1,58 @@
+{
+    "E_MI_MODULE_ID_SYS" :
+    {
+        "cmdQBufSize" : 420,
+        "bEnableCmdqReset" : true,
+        "g_bEnableMiuPanic" : false,
+        "g_bEnableMiuProtect" : true
+    },
+    "E_MI_MODULE_ID_SNR" :
+    {
+        "u8MulSnrRtPhyPadMap" : [0, 0, 2],
+        "u8MulSnrRtVifGroupSnrID" : [ 0, 1, 2],
+        "u8MulSnrRtPwmCnt" : 3,
+        "u8MulSnrRtPwmId" : [ 0, 1, 2],
+        "u8MulSnrRtPwmActivePolarity" : [0, 1, 1],
+        "u32MulSnrRtPwmDefFps" : 10000
+    },
+    "E_MI_MODULE_ID_VIF" :
+    {
+        "u8MulSnrRtVifGroupCnt" : 3,
+        "u8MulSnrRtVifGroupPhyMap" : [ 0, 0, 1],
+        "VifGroupSensorSelect" : [
+            {
+                "gpio" : [ {"no" : 55, "pol" : 0} ]
+            },
+            {
+                "gpio" : [ {"no" : 55, "pol" : 1} ]
+            },
+            {
+                "na" : [ ]
+            }
+        ]
+    },
+    "E_MI_MODULE_ID_FB" :
+    {
+        "default_reserved_mem_name": "fb"
+    },
+    "E_MI_MODULE_ID_SCL" :
+    {
+        "u16RingLineCntArray":[128,128]
+    },
+    "E_MI_MODULE_ID_VENC" :
+    {
+        "use_ring_ref" : 1,
+        "max_chn_num" : 8,
+        "s32PreloadChnFlag" : 0,
+        "u32Chn0PreloadBufSize" : 0,
+        "u32Chn1PreloadBufSize" : 0,
+        "u32Chn2PreloadBufSize" : 0,
+        "s32JpePreloadChnFlag" : 0,
+        "u32JpeChn0PreloadBufSize" : 0,
+        "u32JpeChn1PreloadBufSize" : 0,
+        "u32JpeChn2PreloadBufSize" : 0,
+        "ven_clock" : 0,
+        "jpe_clock" : 0,
+        "VenMiuPChn" : 0
+    }
+}

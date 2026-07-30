@@ -1,0 +1,10 @@
+config VERIFY_PTREE
+    bool "pipeline_tree"
+    default n
+    help
+        whether to compile or not
+
+config verify_ptree
+    string
+    default enable if VERIFY_PTREE
+    default disable if !VERIFY_PTREE

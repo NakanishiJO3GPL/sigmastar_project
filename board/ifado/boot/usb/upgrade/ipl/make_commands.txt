@@ -1,0 +1,3 @@
+IPL.padding.ifado_usb.bin                                                                        ./build.py -c ./configs/ifado.json -t linux -g usb -b 0
+IPL.padding.ifado_usb.FPGA=y.bin                                                                 ./build.py -c ./configs/ifado.json -t linux -g usb -b 1
+IPL.padding.ifado_usb.REGION_WW=y.bin                                                            ./build.py -c ./configs/ifado.json -t linux -g usb -b 2

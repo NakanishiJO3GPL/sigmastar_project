@@ -1,0 +1,12 @@
+menu "Verify Compile Config"
+source configs/Kconfigs/sdk/verify/mi_demo/Kconfig
+source configs/Kconfigs/sdk/verify/amigos/Kconfig
+source configs/Kconfigs/sdk/verify/ptree/Kconfig
+source configs/Kconfigs/sdk/verify/sample_code/Kconfig
+source configs/Kconfigs/sdk/verify/bsp_demo/Kconfig
+source configs/Kconfigs/sdk/verify/sstar_ota/Kconfig
+source configs/Kconfigs/sdk/verify/system_app/Kconfig
+source configs/Kconfigs/sdk/verify/Cardvimpl/Kconfig
+source configs/Kconfigs/sdk/verify/CardvUI/Kconfig
+
+endmenu

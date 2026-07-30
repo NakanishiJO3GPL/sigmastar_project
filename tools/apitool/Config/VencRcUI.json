@@ -1,0 +1,645 @@
+{
+    "Page":[
+        {
+            "page_group": "1",
+            "page_name": "ENC",
+            "component": [
+                {
+                    "name": "RateControlMode",
+                    "label": "RateControlMode",
+                    "component_type": "NumericUpDown",
+                    "min_value": "-1",
+                    "max_value": "3",
+                    "value_step": "1",
+                    "default_value": "-1",
+                    "rc_cfg_type": "2"
+                },
+                {
+                    "name": "RcLogCtrl",
+                    "label": "RcLogCtrl",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "4294967295",
+                    "value_step": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "5"
+                }
+            ]
+        },
+        {
+            "page_group": "2",
+            "page_name": "FRAME SIZE",
+            "component": [
+                {
+                    "name": "MaxIPProp",
+                    "label": "MaxIPProp",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "200000",
+                    "value_step": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "5"
+                },
+                {
+                    "name": "MaxISize",
+                    "label": "MaxISize",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "4294967295",
+                    "value_step": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "5"
+                },
+                {
+                    "name": "MaxPSize",
+                    "label": "MaxPSize",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "4294967295",
+                    "value_step": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "5"
+                }
+            ]
+        },
+        {
+            "page_group": "3",
+            "page_name": "BIT RATE",
+            "component": [
+                {
+                    "name": "BitTolerance",
+                    "label": "BitTolerance",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "120",
+                    "value_step": "1",
+                    "default_value": "25",
+                    "rc_cfg_type": "1"
+                },
+                {
+                    "name": "VbvBufferSize",
+                    "label": "VbvBufferSize",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "25000",
+                    "value_step": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "3"
+                }
+            ]
+        },
+        {
+            "page_group": "4",
+            "page_name": "FRAME QP RANGE",
+            "component": [
+                {
+                    "name": "MinQp",
+                    "label": "MinQp",
+                    "component_type": "NumericUpDown",
+                    "min_value": "1",
+                    "max_value": "51",
+                    "value_step": "1",
+                    "default_value": "12",
+                    "rc_cfg_type": "5"
+                },
+                {
+                    "name": "MaxQp",
+                    "label": "MaxQp",
+                    "component_type": "NumericUpDown",
+                    "min_value": "1",
+                    "max_value": "51",
+                    "value_step": "1",
+                    "default_value": "48",
+                    "rc_cfg_type": "5"
+                },
+                {
+                    "name": "MinIQp",
+                    "label": "MinIQp",
+                    "component_type": "NumericUpDown",
+                    "min_value": "1",
+                    "max_value": "51",
+                    "value_step": "1",
+                    "default_value": "12",
+                    "rc_cfg_type": "1"
+                },
+                {
+                    "name": "MaxIQp",
+                    "label": "MaxIQp",
+                    "component_type": "NumericUpDown",
+                    "min_value": "1",
+                    "max_value": "51",
+                    "value_step": "1",
+                    "default_value": "48",
+                    "rc_cfg_type": "1"
+                }
+            ]
+        },
+        {
+            "page_group": "5",
+            "page_name": "FRAME DQP",
+            "component": [
+                {
+                    "name": "MaxIncQp",
+                    "label": "MaxIncQp",
+                    "component_type": "NumericUpDown",
+                    "min_value": "1",
+                    "max_value": "50",
+                    "value_step": "1",
+                    "default_value": "3",
+                    "rc_cfg_type": "1"
+                },
+                {
+                    "name": "MaxDecQp",
+                    "label": "MaxDecQp",
+                    "component_type": "NumericUpDown",
+                    "min_value": "1",
+                    "max_value": "50",
+                    "value_step": "1",
+                    "default_value": "3",
+                    "rc_cfg_type": "1"
+                },
+                {
+                    "name": "IPQpDelta",
+                    "label": "IPQpDelta",
+                    "component_type": "NumericUpDown",
+                    "min_value": "-12",
+                    "max_value": "12",
+                    "value_step": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "2"
+                }
+            ]
+        },
+        {
+            "page_group": "6",
+            "page_name": "VBR",
+            "component": [
+                {
+                    "name": "ChangePos",
+                    "label": "ChangePos",
+                    "component_type": "NumericUpDown",
+                    "min_value": "5",
+                    "max_value": "100",
+                    "value_step": "1",
+                    "default_value": "80",
+                    "rc_cfg_type": "1"
+                }
+            ]
+        },
+        {
+            "page_group": "7",
+            "page_name": "AVBR",
+            "component": [
+                {
+                    "name": "MinStillPercent",
+                    "label": "MinStillPercent",
+                    "component_type": "NumericUpDown",
+                    "min_value": "5",
+                    "max_value": "100",
+                    "value_step": "1",
+                    "default_value": "80",
+                    "rc_cfg_type": "1"
+                },
+                {
+                    "name": "MDSensitivity",
+                    "label": "MDSensitivity",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "7",
+                    "value_step": "1",
+                    "default_value": "5",
+                    "rc_cfg_type": "1"
+                },
+                {
+                    "name": "StillBRCompensate",
+                    "label": "StillBRCompensate",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "4",
+                    "value_step": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "1"
+                },
+                {
+                    "name": "AvbrBitrateMode",
+                    "label": "AvbrBitrateMode",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "1",
+                    "value_step": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "1"
+                }
+            ]
+        },
+        {
+            "page_group": "8",
+            "page_name": "DEFLICKER",
+            "component": [
+                {
+                    "name": "deflicker_mode",
+                    "label": "deflicker_mode",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "2",
+                    "value_step": "1",
+                    "default_value": "1",
+                    "rc_cfg_type": "1"
+                },
+                {
+                    "name": "deflicker1_strength",
+                    "label": "deflicker1_strength",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "11",
+                    "value_step": "1",
+                    "default_value": "6",
+                    "rc_cfg_type": "1"
+                },
+                {
+                    "name": "deflicker2_strength",
+                    "label": "deflicker2_strength",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "8",
+                    "value_step": "1",
+                    "default_value": "1",
+                    "rc_cfg_type": "1"
+                },
+                {
+                    "name": "cu_deflicker_en",
+                    "label": "cu_deflicker_en",
+                    "component_type": "CheckBox",
+                    "min_value": "0",
+                    "max_value": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "0"
+                }
+            ]
+        },
+        {
+            "page_group": "9",
+            "page_name": "FRAME HVS",
+            "component": [
+                {
+                    "name": "frame_hvs_option1_en",
+                    "label": "frame_hvs_option1_en",
+                    "component_type": "CheckBox",
+                    "min_value": "0",
+                    "max_value": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "0"
+                },
+                {
+                    "name": "frame_hvs_option2_en",
+                    "label": "frame_hvs_option2_en",
+                    "component_type": "CheckBox",
+                    "min_value": "0",
+                    "max_value": "1",
+                    "default_value": "1",
+                    "rc_cfg_type": "0"
+                },
+                {
+                    "name": "frame_hvs_option3_en",
+                    "label": "frame_hvs_option3_en",
+                    "component_type": "CheckBox",
+                    "min_value": "0",
+                    "max_value": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "0"
+                },
+                {
+                    "name": "frame_hvs_option4_en",
+                    "label": "frame_hvs_option4_en",
+                    "component_type": "CheckBox",
+                    "min_value": "0",
+                    "max_value": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "0"
+                },
+                {
+                    "name": "frame_hvs_option5_en",
+                    "label": "frame_hvs_option5_en",
+                    "component_type": "CheckBox",
+                    "min_value": "0",
+                    "max_value": "1",
+                    "default_value": "1",
+                    "rc_cfg_type": "0"
+                },
+                {
+                    "name": "SceneChgCompensEnable",
+                    "label": "SceneChgCompensEnable",
+                    "component_type": "CheckBox",
+                    "min_value": "0",
+                    "max_value": "1",
+                    "default_value": "1",
+                    "rc_cfg_type": "0"
+                },
+                {
+                    "name": "SceneChgCompensLevel",
+                    "label": "SceneChgCompensLevel",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "100",
+                    "value_step": "1",
+                    "default_value": "20",
+                    "rc_cfg_type": "3"
+                },
+                {
+                    "name": "SceneChgThr",
+                    "label": "SceneChgThr",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "2550",
+                    "value_step": "1",
+                    "default_value": "20",
+                    "rc_cfg_type": "3"
+                },
+                {
+                    "name": "lambda_strategy",
+                    "label": "lambda_strategy",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "3",
+                    "value_step": "1",
+                    "default_value": "3",
+                    "rc_cfg_type": "1"
+                }
+            ]
+        },
+        {
+            "page_group": "50",
+            "page_name": "BLOCK HVS",
+            "component": [
+                {
+                    "name": "reg_ven_rc_hvs_en",
+                    "label": "reg_ven_rc_hvs_en",
+                    "component_type": "CheckBox",
+                    "min_value": "0",
+                    "max_value": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "0"
+                },
+                {
+                    "name": "reg_ven_rc_hvs_level",
+                    "label": "reg_ven_rc_hvs_level",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "7",
+                    "value_step": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "1"
+                },
+                {
+                    "name": "reg_ven_rc_cu_inc_delta_qp",
+                    "label": "reg_ven_rc_cu_inc_delta_qp",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "15",
+                    "value_step": "1",
+                    "default_value": "10",
+                    "rc_cfg_type": "1"
+                },
+                {
+                    "name": "reg_ven_rc_cu_dec_delta_qp",
+                    "label": "reg_ven_rc_cu_dec_delta_qp",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "15",
+                    "value_step": "1",
+                    "default_value": "10",
+                    "rc_cfg_type": "1"
+                },
+                {
+                    "name": "hvs_lut1_en",
+                    "label": "hvs_lut1_en",
+                    "component_type": "CheckBox",
+                    "min_value": "0",
+                    "max_value": "1",
+                    "default_value": "1",
+                    "rc_cfg_type": "0"
+                },
+                {
+                    "name": "hvs_lut1",
+                    "label": "hvs_lut1",
+                    "component_type": "ListBox",
+                    "min_value": "0",
+                    "max_value": "63",
+                    "default_value": "[6,8,8,12,16,23,27,30,48]",
+                    "rc_cfg_type": "7"
+                },
+                {
+                    "name": "hvs_lut2_en",
+                    "label": "hvs_lut2_en",
+                    "component_type": "CheckBox",
+                    "min_value": "0",
+                    "max_value": "1",
+                    "default_value": "1",
+                    "rc_cfg_type": "0"
+                },
+                {
+                    "name": "hvs_lut2",
+                    "label": "hvs_lut2",
+                    "component_type": "ListBox",
+                    "min_value": "0",
+                    "max_value": "255",
+                    "default_value": "[255,224,63,60,57,57,55,57,60,62,64,66,75,128,168,224,255]",
+                    "rc_cfg_type": "7"
+                },
+                {
+                    "name": "hvs_lut3_en",
+                    "label": "hvs_lut3_en",
+                    "component_type": "CheckBox",
+                    "min_value": "0",
+                    "max_value": "1",
+                    "default_value": "1",
+                    "rc_cfg_type": "0"
+                },
+                {
+                    "name": "hvs_lut3_1",
+                    "label": "hvs_lut3_1",
+                    "component_type": "ListBox",
+                    "min_value": "0",
+                    "max_value": "64",
+                    "default_value": "[16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,16,32]",
+                    "rc_cfg_type": "7"
+                },
+                {
+                    "name": "hvs_lut3_2",
+                    "label": "hvs_lut3_2",
+                    "component_type": "ListBox",
+                    "min_value": "0",
+                    "max_value": "64",
+                    "default_value": "[1,1,1,1,1,2,2,0,0,0,0,0,0,0,0,0,3]",
+                    "rc_cfg_type": "7"
+                },
+                {
+                    "name": "hvs_lut4_en",
+                    "label": "hvs_lut4_en",
+                    "component_type": "CheckBox",
+                    "min_value": "0",
+                    "max_value": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "0"
+                },
+                {
+                    "name": "hvs_lut4",
+                    "label": "hvs_lut4",
+                    "component_type": "ListBox",
+                    "min_value": "0",
+                    "max_value": "64",
+                    "default_value": "[8,8,12,8,8,10,18,22,18,10,15,24,24,24,15,15,22,22,22,15]",
+                    "rc_cfg_type": "7"
+                }
+            ]
+        },
+        {
+            "page_group": "51",
+            "page_name": "IFBC",
+            "component": [
+                {
+                    "name": "reg_ven_rc_ifbc_en",
+                    "label": "reg_ven_rc_ifbc_en",
+                    "component_type": "CheckBox",
+                    "min_value": "0",
+                    "max_value": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "0"
+                },
+                {
+                    "name": "reg_ven_rc_ifbc_level",
+                    "label": "reg_ven_rc_ifbc_level",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "7",
+                    "value_step": "1",
+                    "default_value": "1",
+                    "rc_cfg_type": "1"
+                },
+                {
+                    "name": "ifbc_adp_motion_thr",
+                    "label": "ifbc_adp_motion_thr",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "100",
+                    "value_step": "1",
+                    "default_value": "10",
+                    "rc_cfg_type": "1"
+                }
+            ]
+        },
+        {
+            "page_group": "52",
+            "page_name": "PENALTY",
+            "component": [
+                {
+                    "name": "skip_penalty_stren",
+                    "label": "skip_penalty_stren",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "15",
+                    "default_value": "0",
+                    "rc_cfg_type": "1"
+                },
+                {
+                    "name": "split_penalty_stren",
+                    "label": "split_penalty_stren",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "15",
+                    "default_value": "0",
+                    "rc_cfg_type": "1"
+                },
+                {
+                    "name": "split_penalty_thr",
+                    "label": "split_penalty_thr",
+                    "component_type": "NumericUpDown",
+                    "min_value": "0",
+                    "max_value": "255",
+                    "default_value": "2",
+                    "rc_cfg_type": "1"
+                },
+                {
+                    "name": "reg_ven_penalty_intra4",
+                    "label": "reg_ven_penalty_intra4",
+                    "component_type": "NumericUpDown",
+                    "min_value": "-512",
+                    "max_value": "511",
+                    "value_step": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "4"
+                },
+                {
+                    "name": "reg_ven_penalty_intra8",
+                    "label": "reg_ven_penalty_intra8",
+                    "component_type": "NumericUpDown",
+                    "min_value": "-512",
+                    "max_value": "511",
+                    "value_step": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "4"
+                },
+                {
+                    "name": "reg_ven_penalty_intra16",
+                    "label": "reg_ven_penalty_intra16",
+                    "component_type": "NumericUpDown",
+                    "min_value": "-512",
+                    "max_value": "511",
+                    "value_step": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "4"
+                },
+                {
+                    "name": "reg_ven_penalty_intra32",
+                    "label": "reg_ven_penalty_intra32",
+                    "component_type": "NumericUpDown",
+                    "min_value": "-512",
+                    "max_value": "511",
+                    "value_step": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "4"
+                },
+                {
+                    "name": "reg_ven_penalty_inter8",
+                    "label": "reg_ven_penalty_inter8",
+                    "component_type": "NumericUpDown",
+                    "min_value": "-512",
+                    "max_value": "511",
+                    "value_step": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "4"
+                },
+                {
+                    "name": "reg_ven_penalty_inter16",
+                    "label": "reg_ven_penalty_inter16",
+                    "component_type": "NumericUpDown",
+                    "min_value": "-512",
+                    "max_value": "511",
+                    "value_step": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "4"
+                },
+                {
+                    "name": "reg_ven_penalty_inter32",
+                    "label": "reg_ven_penalty_inter32",
+                    "component_type": "NumericUpDown",
+                    "min_value": "-512",
+                    "max_value": "511",
+                    "value_step": "1",
+                    "default_value": "0",
+                    "rc_cfg_type": "4"
+                },
+                {
+                    "name": "reg_ven_intra_pu32_penalty",
+                    "label": "reg_ven_intra_pu32_penalty",
+                    "component_type": "NumericUpDown",
+                    "min_value": "-128",
+                    "max_value": "127",
+                    "value_step": "1",
+                    "default_value": "5",
+                    "rc_cfg_type": "2"
+                }
+            ]
+        }
+    ]
+}

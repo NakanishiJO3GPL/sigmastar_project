@@ -1,0 +1,8 @@
+sstar_flash.ko
+sstar_fsp_qspi.ko
+sstar_spinor.ko
+fuse.ko
+zlib_deflate.ko
+squashfs.ko
+jffs2.ko
+lwfs.ko
