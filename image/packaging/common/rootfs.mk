@@ -130,7 +130,7 @@ rootfs_$(PRODUCT):
 	fi;
 
 	# auto start fridge_ai app
-	echo "sh /customer/fridge_ai.script &" >> ${OUTPUTDIR}/rootfs/etc/init.d/rcS;
+	#echo "sh /customer/fridge_ai.script &" >> ${OUTPUTDIR}/rootfs/etc/init.d/rcS;
 
 	# set default password NULL
 	echo "root::0:0:Linux User,,,:/home/root:/bin/sh" >> $(OUTPUTDIR)/rootfs/etc/passwd;
