@@ -14,6 +14,7 @@ STRIP := $(CROSS_COMPILE)strip
 CURDIR := $(shell pwd)
 
 SRC_DIR := $(CURDIR)/src
+INIT_DIR := $(CURDIR)/init
 INC_DIR := $(CURDIR)/src
 OUT_DIR := $(CURDIR)/output
 
@@ -102,6 +103,7 @@ ROOTFS_BIN ?= $(SDK_ROOT)/image/output/customer
 install: all
 	@mkdir -p $(ROOTFS_BIN)
 	@cp $(TARGET_BIN) $(ROOTFS_BIN)
+	cp $(INIT_DIR)/fridge_ai.script $(ROOTFS_BIN)
 
 ########################################
 .PHONY: all clean install

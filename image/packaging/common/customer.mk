@@ -39,6 +39,7 @@ customer_$(PRODUCT):
 
 	# pack fridge_ai
 	cp -rf $(PROJ_ROOT)/customer/app/fridge_ai/output/fridge_ai $(customer$(RESOURCE))/; \
+	cp -rf $(PROJ_ROOT)/customer/app/fridge_ai/init/fridge_ai.script $(customer$(RESOURCE))/; \
 	chmod 777 $(customer$(RESOURCE))/fridge_ai;
 
 	# pack cardv
