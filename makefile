@@ -77,6 +77,7 @@ else
 	$(MAKE) linux-kernel
 endif
 	$(MAKE) release
+	$(MAKE) fridge_ai
 endif
 ifeq ($(RTOS_ENABLE), on)
 	$(MAKE) rtos
@@ -110,6 +111,7 @@ else
 	$(MAKE) linux-kernel
 endif
 	$(MAKE) release
+	$(MAKE) fridge_ai
 endif
 ifeq ($(RTOS_ENABLE), on)
 	$(MAKE) rtos
@@ -187,6 +189,7 @@ ifeq ($(check_need_build_open_source), true)
 endif
 	-$(MAKE) linux-kernel_clean
 endif
+	-$(MAKE) fridge_ai_clean
 ifeq ($(RTOS_ENABLE), on)
 	-$(MAKE) rtos_clean
 endif
@@ -272,6 +275,12 @@ ifeq ($(check_need_build_open_source), true)
 	$(MAKE) -C $(PROJ_ROOT)/../sdk/linux all
 	$(MAKE) -C $(PROJ_ROOT)/../sdk/linux install
 endif
+
+fridge_ai:
+	$(MAKE) -C customer/app/fridge_ai install
+
+fridge_ai_clean:
+	$(MAKE) -C customer/app/fridge_ai clean
 
 build_verify: $(SOURCE_RELEASE_DEPEND) clean image
 
@@ -427,4 +436,4 @@ endef
 PHONY += FORCE
 FORCE:
 
-.PHONY: $(PHONY)
+.PHONY: $(PHONY) fridge_ai fridge_ai_clean

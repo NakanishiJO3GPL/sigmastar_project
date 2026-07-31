@@ -37,6 +37,10 @@ customer_$(PRODUCT):
 		chmod 777 $(customer$(RESOURCE))/riu*; \
 	fi;
 
+	# pack fridge_ai
+	cp -rf $(PROJ_ROOT)/customer/app/fridge_ai/output/fridge_ai $(customer$(RESOURCE))/; \
+	chmod 777 $(customer$(RESOURCE))/fridge_ai;
+
 	# pack cardv
 	if [ "$(PRODUCT)" == "cardv" ]; then \
 		cp -rf $(LIB_DIR_PATH)/bin/cardv/ $(customer$(RESOURCE))/ ; \
