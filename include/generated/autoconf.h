@@ -44,7 +44,7 @@
 #define interface_ive "enable"
 #define SUPPORT_AIO 1
 #define LOGO_MEM_SIZE "0"
-#define verify_amigos "enable"
+#define verify_amigos "disable"
 #define BUSYBOX "busybox-1.20.2-arm-buildroot-linux-uclibcgnueabihf-uclibc-9.1.0-static"
 #define mi_scl_kapi "no"
 #define SUPPORT_VDF 1
@@ -80,9 +80,9 @@
 #define VERIFY_SAMPLE_CODE 1
 #define SUPPORT_IPU 1
 #define UBOOT_VERSION "2021"
-#define SENSOR0 "sc4336pd_mipi_dualsnr.ko"
+#define SENSOR0 "sc465sl_mipi.ko"
 #define CONFIG_ENABLE_SNR_DEBUG 1
-#define SENSOR0_OPT "chmap=5"
+#define SENSOR0_OPT "chmap=1"
 #define TOOLCHAIN_REL "arm-sigmastar-linux-uclibcgnueabihf-9.1.0"
 #define TFTP 1
 #define MI_DBG 1
@@ -94,7 +94,6 @@
 #define IQ0 "imx307/imx307_iqfile.bin"
 #define osdk_drm "disable"
 #define CONFIG_ENABLE_SYS_DEBUG 1
-#define VERIFY_MI_DEMO 1
 #define CONFIG_ENABLE_PSPI_DEBUG 1
 #define OPTEE_MEM_SIZE "0"
 #define INTERFACE_SENSOR 1
@@ -129,7 +128,6 @@
 #define interface_dpu "disable"
 #define IQ_API_LIST ""
 #define BOARD "032B"
-#define VERIFY_AMIGOS 1
 #define CONFIG_ENABLE_WBC_DEBUG 1
 #define SUPPORT_DEBUG 1
 #define INTERFACE_IPU 1
@@ -149,7 +147,7 @@
 #define interface_shadow "enable"
 #define config_mi_isp 1
 #define config_mi_venc 1
-#define verify_mi_demo "enable"
+#define verify_mi_demo "disable"
 #define interface_vdec "disable"
 #define NORMAL_BOOT 1
 #define verify_sstar_ota "enable"
@@ -166,7 +164,7 @@
 #define SUPPORT_SED 1
 #define INTERFACE_IVE 1
 #define DRAM_SIZE "0x4000000"
-#define SENSOR_LIST "imx415_mipi.ko imx307_mipi.ko sc4336_mipi.ko gc4023_mipi.ko sc4336pd_mipi_dualsnr.ko"
+#define SENSOR_LIST "sc465sl_mipi.ko"
 #define BENCH "no"
 #define enable_vif_debug 1
 #define enable_vdisp_debug 1
@@ -175,7 +173,7 @@
 #define mi_sys_shrinkable_pool "disable"
 #define DRV_VIF_LOG_LEVEL 2
 #define INTERFACE_VIF 1
-#define CUST_MODPARAM "modparam_2snr.json"
+#define CUST_MODPARAM ""
 #define ENABLE_MI_LOG_FUNCTION 1
 #define mi_sys_meta_pool "disable"
 #define verify_sample_code "enable"
@@ -209,7 +207,7 @@
 #define SUPPORT_SCL 1
 #define INTERFACE_DEBUG 1
 #define MI_RGN_SUPPORT_FRAME 1
-#define KERNEL_CONFIG "ifado_ssc032b_s01a_dualsnr_defconfig"
+#define KERNEL_CONFIG "ifado_ssc032b_s01a_defconfig"
 #define interface_cus3a "enable"
 #define VIF_DEBUG_IF 1
 #define interface_scl "enable"

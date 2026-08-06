@@ -50,7 +50,7 @@ OPTEE_MEM_SIZE = 0
 TFA_MEM_SIZE = 0
 KERNEL_VERSION_5.10 = y
 KERNEL_VERSION = 5.10
-KERNEL_CONFIG = ifado_ssc032b_s01a_dualsnr_defconfig
+KERNEL_CONFIG = ifado_ssc032b_s01a_defconfig
 KERNEL_BIN = uImage.xz
 IMAGE_CONFIG = nor.squashfs.partition.config
 IPL_CONFIG = IPL.ifado_nor.bin
@@ -70,9 +70,9 @@ IQ1 = imx307/imx307_iqfile.bin
 IQ2 = imx307/imx307_iqfile.bin
 IQ3 = imx307/imx307_iqfile.bin
 IQ_API_LIST =
-SENSOR_LIST = imx415_mipi.ko imx307_mipi.ko sc4336_mipi.ko gc4023_mipi.ko sc4336pd_mipi_dualsnr.ko
-SENSOR0 = sc4336pd_mipi_dualsnr.ko
-SENSOR0_OPT = chmap=5
+SENSOR_LIST = sc465sl_mipi.ko
+SENSOR0 = sc465sl_mipi.ko
+SENSOR0_OPT = chmap=1
 SENSOR1 =
 SENSOR1_OPT =
 SENSOR2 =
@@ -158,17 +158,15 @@ TFTP = y
 UPGRADE_TYPE = tftp
 SD_UPGRADE_DEV = 0
 PACK_MOD_LIST =
-CUST_MODPARAM = modparam_2snr.json
+CUST_MODPARAM =
 NO_WIFI = y
 SIGMA_WIFI = no_wifi
 USE_SSH = off
 USE_ADB = off
 RTOS_ENABLE = off
 PM_RTOS_ENABLE = off
-VERIFY_MI_DEMO = y
-verify_mi_demo = enable
-VERIFY_AMIGOS = y
-verify_amigos = enable
+verify_mi_demo = disable
+verify_amigos = disable
 verify_ptree = disable
 VERIFY_SAMPLE_CODE = y
 verify_sample_code = enable
@@ -328,9 +326,6 @@ OBJCOPY = $(PREFIX)objcopy
 OBJDUMP = $(PREFIX)objdump
 export ARCH CROSS_COMPILE
 export PATH=/tools/bin/:/tools/toolchain/arm-sigmastar-linux-uclibcgnueabihf-9.1.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/tools/toolchain/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin
-CLANG_TIDY = /home/nakanishi/work/sigmastar/ssc375/project/tools/clang-13/clang-tidy
-CLANG_FORMAT = /home/nakanishi/work/sigmastar/ssc375/project/tools/clang-13/clang-format
-export CLANG_TIDY CLANG_FORMAT
 KERNEL_ROOT = /home/nakanishi/work/sigmastar/ssc375/project/../kernel
 CUR_KERNEL_VERSION = 5.10.117
 KERNEL_LX_MEM = LX_MEM=0x4000000
@@ -338,4 +333,4 @@ KERNEL_RESERVED_CMA = cma=1M
 KERNEL_RESERVED_MMA = mma_heap=mma_heap_name0,miu=0,sz=0x2000000 mma_memblock_remove=1
 KERNEL_BOOT_ENV = LX_MEM=0x4000000 mma_heap=mma_heap_name0,miu=0,sz=0x2000000 mma_memblock_remove=1 cma=1M
 ALKAID_MHAL_UT = 0
-PROJECT_DEFCONFIG=ipc_ifado.nor.uclibc-9.1.0-squashfs.ssc032b.64.qfn88_dualsnr_defconfig
+PROJECT_DEFCONFIG=ipc_ifado.nor.uclibc-9.1.0-squashfs.ssc032b.64.qfn88_defconfig
