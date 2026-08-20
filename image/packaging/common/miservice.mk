@@ -48,6 +48,7 @@ endif
 	mkdir -p $(miservice$(RESOURCE))/iqfile/
 	$(call copy_if_exists,$(PROJ_ROOT)/board/$(CHIP)/iqfile/isp_api.xml,$(miservice$(RESOURCE))/iqfile/)
 	$(call copy_if_exists,$(PROJ_ROOT)/board/$(CHIP)/iqfile/imx307/IMX307_MIPI_HDR_LEF_api.bin,$(miservice$(RESOURCE))/iqfile/)
+	$(call copy_if_exists,$(PROJ_ROOT)/board/$(CHIP)/iqfile/sc4336P/sc4336P_api.bin,$(miservice$(RESOURCE))/iqfile/)
 	$(call copy_if_exists,$(PROJ_ROOT)/board/$(CHIP)/iqfile/nir_api.xml,$(miservice$(RESOURCE))/iqfile/)
 
 	if [ "$(IQ0)" != "" ]; then \

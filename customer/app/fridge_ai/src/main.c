@@ -8,6 +8,8 @@
 #include <sys/stat.h>
 
 #include "mi_sys.h"
+#include "mi_isp_ae.h"
+
 #include "st_common.h"
 #include "st_common_vif.h"
 #include "st_common_isp.h"
@@ -93,6 +95,8 @@ static MI_S32 STUB_BaseModuleInit(MI_U8 u8SensorNum)
         STCHECKRESULT(ST_Common_VifCreateDevGroup(u32VifGroupId[i], &stVifGroupAttr));
 
         ST_Common_GetVifDefaultDevAttr(&stVifDevAttr);
+        stVifDevAttr.eInputPixel = RGB_BAYER_PIXEL(E_MI_SYS_DATA_PRECISION_12BPP, E_MI_SYS_PIXEL_BAYERID_RG);
+        stVifDevAttr.eDataPrecision = E_MI_SYS_DATA_PRECISION_12BPP;
         STCHECKRESULT(ST_Common_VifEnableDev(u32VifDevId[i], &stVifDevAttr));
 
         ST_Common_GetVifDefaultPortAttr(&stVifPortAttr);
@@ -362,7 +366,7 @@ static MI_S32 ST_SingleSensorPipeline_Preview(void)
 
     if (strlen(g_stVifInputParam.IqBinPath) == 0) {
         MI_SNR_GetPlaneInfo(u32SensorPad, 0, &stPlaneInfo);
-        sprintf(IqApiBinFilePath, "/config/iqfile/%s_api.bin", stPlaneInfo.s8SensorName);
+        sprintf(IqApiBinFilePath, "/config/iqfile/sc4336P_api.bin");
     }
     else {
         strcpy(IqApiBinFilePath, g_stVifInputParam.IqBinPath);
